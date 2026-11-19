@@ -1,0 +1,18 @@
+{
+  "name": "batch7pm",
+  "version": "1.0.0",
+  "description": "Playwright Typescript",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Gomasa",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "allure-playwright": "^3.15.0",
+    "csv-parse": "^7.0.3",
+    "xlsx": "^0.18.5"
+  }
+}

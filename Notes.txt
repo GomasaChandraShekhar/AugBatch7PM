@@ -1,0 +1,997 @@
+
+Running Notes ::
+
+How to run TS code ::
+
+Way 1 :: tsx = 
+
+tsx fileName.ts
+
+Way 2 ::  tsc :: typescript compiler 
+
+tsc fileName.ts === js file == fileName.js
+
+node fileName.js
+
+==============================================
+
+Data Types :: 
+
+name = Playwrigh = string = text type of 
+age = 40
+phno = 9100774577
+
+sName: type = value;
+
+1. Primitive Data types ::
+
+    1. string :: '', "", `` :: 'Chandra', "venue 123", `Learning`
+    2. number :: 122, 9100774577, 1234.54
+    3. boolean :: true false
+    4. undefined :: 
+    5. union :: | :: 
+    6. null ::
+    7. any :: 
+    8. void :: 
+
+2. Non Primitive Data Types :: 
+
+    1. Array :: 
+    2. Tuple ::
+    3. Class 
+    4. method
+    5. Object
+
+==========================================
+
+Variable :: 
+
+Syntax :: 
+
+let varName: datatype = value;
+
+var     let       const
+
+var :: 
+
+Syntax :: 
+
+var varNam: datatype = value;
+
+Scope :: Globally Accessible 
+Re-Declaration :: Allowed
+Re-Assignment :: Allowed
+Hoisting :: Allowed - Before declaring the variable accessing it.
+
+=================================================
+        8-Sept-2026
+
+let varNam: datatype = value;
+
+Scope :: Function OR block scoped
+Re-Declaration :: Not allowed
+Re-Assignment :: Allowed
+Hoisting :: Not allowed
+
+
+const varNam: datatype = value;
+
+const => constant - unchangable
+
+Scope :: Function OR block scoped
+Re-Declaration :: Not allowed
+Re-Assignment :: Not allowed
+Hoisting :: Not allowed
+
+=================================================
+        9-Sept-2026
+
+Operators :: 
+
+1. Arithmetic Operators
+2. Assignment Operators
+3. Comparision Operators
+4. Logical Operators
+5. Ternary Operators
+6. Increament and Decreament Operators
+
+1. Arithmetic Operators :: To perform mathematical operations
+
+Addition  :: + :: Sum of numbers
+Subtraction :: - :: Difference of numbers
+Multiplication :: * :: Product of numbers
+Division :: / :: Quotient ::
+Modulus :: % :: Remainder
+
+2)10(5 - Quotient
+  10
+  ===
+  0 - Remainder
+
+
+2. Assignment Operators :: 
+
+1. Assignment Operator :: = :: let a = 10;
+2. Addition And :: += :: let a = 10;  a += 10;  a = a + 10;  a = 10+ 10;  a =20;
+3. Subtraction And :: -= :: 
+4. Multiplication And :: *= :: 
+5. Division And :: /= :: 
+6. Modulus And :: %= :: 
+
+3. Increament and Decreament Operators ::
+
+Increament Operator :: ++ :: increament by 1 only
+
+let b = 10;
+b++;
+
+Pre Increament Operator :: ++b
+First increase the value then access the increased value.
+
+Post Increament Operator :: b++
+First access the value then value will be increased
+
+Decreament Operator :: --
+
+Pre decreament Operator :: --b
+First decrease the value then access the decreased value.
+
+Post decreament Operator :: b--
+First access the value then value will be decreased
+
+=============================================
+
+        10-Sept-2026
+
+3. Comparision Operators :: Data Comparision :: boolean :: true/false
+
+1. EqualsTo :: == :: To check equality :: only values
+2. Not EqualsTo :: != :: to check inequality  :: only values
+3. LessThan :: < :: Left value is less than right value
+4. LessThanOrEqual :: <= :: Left value is less than or equal to right value
+5. GreaterThan :: > :: Left value is GreaterThan the right value
+6. GreaterThanOrEqual :: >= :: Left value is GreaterThan or equal to right value
+7. StrictlyEqualTo :: === :: To check equality :: value and type
+8. Strictly Not EqualTo :: !== :: To check inequality :: value and type
+
+
+5. Ternary Operators :: Conditioanl Operator :: ? :: 
+
+Syntax :: 
+
+let status = condition ? value1 : value2
+
+Example :: 
+
+let status = age >= 18 ? "Major" : "Minor;
+log(status);
+
+
+4. Logical Operators :: boolean :: true/false
+
+1. Logical AND Operator :: && :: 
+2. Logical OR Operator :: || :: 
+3. Logical NOT Operator :: ! :: 
+
+1. Logical AND Operator :: && :: 
+        if all inputs true returns true, else false.
+
+ip1       &&            ip2             op
+true                    true            true
+true                    false           false
+false                   true            false
+false                   false           false
+
+2. Logical OR Operator :: || :: 
+        if atleast one input is true returns true, else false.
+
+ip1       ||            ip2             op
+true                    true            true
+true                    false           true
+false                   true            true
+false                   false           false
+
+3. Logical NOT Operator :: ! ::   opposite to input
+
+        !true == false
+        !false == true
+
+======================================================
+
+Conditional Statements :: To control the execution flow of the script.
+
+1. if :: only one condition :: 
+2. else if :: 2 or more conditions :: 
+3. switch case :: expression based :: 
+
+1. if :: only one condition :: 
+
+Syntax :: condition :: boolean :: true / false
+
+if(condition){
+// if condition is true, if block of code executed.
+}
+else {
+// if condition is false, else block of code executed.
+}
+
+let age: number;
+
+if age >= 18 = 'Major' else 'Minor'
+
+2. else if :: 2 or more conditions :: if...else if...else :: 
+
+Student :: pass marks :: 40
+
+1. marks >= 40 && marks <= 59 ::  Second Division
+2. marks >= 60 && marks <= 79 ::  First Division
+3. marks >= 80 && marks <= 100 ::  Distriction
+
+
+================================================
+
+                15-Sept-2026
+
+switch case ::   expression -> string, boolean, mathematical, any type of expression
+
+Syntax :: 
+
+switch(expression){
+        case 'expression1':
+                // 
+        case 'expression2':
+        //
+        case 'expression3':
+        //
+        default:
+        //
+}
+
+let browserName:string;
+
+=======================================
+
+
+Looping Statements :: 
+
+1 - 10000
+
+log(1);
+log(2);
+log(3);
+log(4);
+log(5);
+log(6);
+log(7);
+
+Use :: 
+1. Code reusability
+2. Code Readability
+
+
+1. for loop :: Know number of iteration :: 
+2. while loop :: Condition based :: 
+3. do while loop :: Condition based :: Before checking condition execute block of code one time.
+4. for of loop :: every element of the array
+5. for in loop :: index of array
+
+1. for loop :: Know number of iteration :: 
+
+Syntax :: 
+
+for(intialization; condition; incre/decre){
+//
+}
+
+0 - 10
+
+for(let i=0;  i <= 10; i++){
+log(i);
+}
+
+2. while loop :: Condition based :: as long as condition is true :: 
+
+Syntax ::
+
+let num=1; // intialization
+let flag=true;
+while(condition){
+
+
+incr/decre;
+}
+
+3. Do while loop :: 
+
+do{
+// 
+}while(condition);
+
+Arrays :: 
+
+let stName = 'dfdf';
+let stAge = 20;
+let stId = '';
+let stCountry = '';
+
+
+Arrays :: []
+
+1. Allows us to store multiple data.
+2. Any type of data.
+3. Data stored on the basis of index.
+4. Index starts with 0.
+5. index of last element  = number of elements in array - 1.
+6. number of elements in array = length of the array.
+
+
+1. Literal ::
+2. Array :: 
+3. Array Object / new keyword ::
+
+1. Literal :: 
+
+let arr1:string[];
+
+let arr1:string[] = [];
+
+let arr1:string[] = ['a','b'];
+
+
+2. Array :: 
+
+let arr2:Array<number>;
+
+let arr2:Array<number> = [];
+
+let arr2:Array<number> = [1,2,3];
+
+3. Array Object / new keyword ::
+
+let arr2:Array<number> = new Array<number>;
+
+let arr2:Array<number> = [];
+
+let arr2:Array<number> = [1,2,3];
+
+======================================
+        22-Sept-2026
+
+String :: Text type of data represented in '', "", ``(Backtik quote).
+
+1. Immutable = unchangable
+
+let s: string = 'Playwright';
+
+'',"" => string literal
+`` ==> template string
+
+Functions :: 
+
+
+Reguler Expression :: 
+
+A-Z - Upper case
+a-z - Lower case
+\d - digit
+\w - word
+\s - space
+A+ - one or more occurences
+A* - Zero or more occurences
+^ - Starts with P
+$ - Ends with - t
+
+Chandra - 
+
+[A-Za-z]+
+
+match(/[A-Za-z\s]*/g)
+
+/[]*/
+
+======================================
+
+        25-Sept-2026
+
+Function :: 
+
+Login(){
+
+}
+
+Types ::
+
+1. Function without Parameters
+2. Function with Parameters
+3. Function with Defaults Parameters
+4. Function with Optional Parameters
+5. Anonymus Function
+6. Arrow Function
+
+======================================
+
+        28-Sept-2026
+
+Function Return Type :: 
+
+x() -- output - return - 
+
+y() -- 
+
+======================================================
+
+30-Sept-2026
+
+Object :: Real time entity - Properties & Behaviour
+
+Collection of Data :: 
+
+key & values
+
+key : value,
+key : value,
+key : value
+
+let varname: type = value; == Variable
+
+let array: type[] = []; == Array == multiple
+
+Student ::
+
+sName: type : Sujeet
+sId: type : 123
+sPhno: type : 9000090000
+sCollege: type : NextIt
+
+key : value == Pair
+
+Syntax :: 
+
+let objName = {
+        key : value,
+        key : value,
+        key : value
+}
+
+How to create an object :: 
+
+1. Object Literal Notation
+2. Defining Object Type
+
+1. Object Literal Notation :: 
+
+let Student = {
+sName : "Sujeet",
+sId : 123,
+sPhno : 9000090000,
+sCollege : "NextIt"
+}
+
+2. Defining Object Type :: Custome Object :: User Defined object :: 
+
+interface Student {
+        sName: string;
+        sId: number;
+        sPhno: number;
+        sCollege: string;
+}
+
+
+Interface :: It contains only declaration but no implementation.
+
+type Employee {
+        name : string;
+        id : number;
+        address: string;
+
+        display();
+}
+
+======================================================
+
+Inheritance :: extends - 
+
+// parent to child - possible
+
+// Child to parent - not possible
+
+class A {
+// Properties
+// methods
+}
+
+class B extends A {
+// Properties
+// methods
+}
+
+================================================
+
+        01-Oct-2026
+
+Playwright ::  Microsoft
+
+npm init playwright@latest
+
+https://playwright.dev/
+
+
+.ts 
+.js
+.java
+
+.spec.ts
+
+example.spec.ts
+
+npx playwright test example.spec.ts --headed
+
+headless :: 
+
+--headed
+
+===================================
+
+        02-Oct-2026
+
+Fixtures ::
+
+default fixtures :: 
+
+browser - browser window
+context - session/profile on a browser
+page - page / tab on context
+
+Custom fixtures :: 
+
+const customFixture = test.extends<PageObject>
+
+Auto waiting ::
+
+async and await -
+
+Promise :: 
+
+Statusses :: pending, fullfill, rejected
+
+async abc(){
+// await st1 --- web api
+// await st2 depends on st1 output -- web api
+// await st3 depends on st2 output -- web api
+// await st4 -- web api
+}
+
+Playwright UI mode ::
+
+======================================
+
+        05-Oct-2026
+
+locators ::         
+
+Playwright locators :: Core Locators :: 
+
+getByRole() :: textbox, 
+getbyText()
+getByTestId()
+getByPlaceholder()
+getByAltText()
+getByLabel()
+getByTitle()
+
+locator('')
+
+Inspect :: Developer Tool
+
+Document Object Model - DOM 
+
+getbyRole('textbox', {name: 'Enter Name'});
+
+
+page.locator();
+
+css
+xapth
+
+id - most widely usable - 
+class - group of elements 
+name - duplicate
+
+
+CSS ::
+
+1. ID :: # :: id="name" - input
+
+with tag name :: tagName#idvalue --- input#name
+
+without tag name :: #idvalue --- #name
+
+2. CLASS :: . :: 
+
+.form-control
+
+3. name ::
+
+input[name=vale]
+
+[name=email][type='email']
+
+
+XPATH :: 
+
+Absolute XPath :: never use :: 
+
+/html/body/div[3]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[1]/div/div/
+div[1]/div[1]/div/div/div/div/div[2]/div[1]/input[1]
+
+Relative xpath :: 
+
+//tagName[@attribute='value']
+
+input = Name == 
+
+//input[@placeholder='Enter Name'][@id='name']
+
+//input[@placeholder='Enter Name' and @id='name']
+
+
+Automation Testing Practice
+
+text() - 
+
+//h1[text()='Automation Testing Practice']
+
+//span[text()="For Selenium, Cypress & Playwright"]
+
+Links :: 
+
+tag   ---- a --- Achor tag
+A
+
+//a[text()='Home']
+
+//a[text()='Online Trainings']
+
+Total number of Links :: //a[@href]
+
+===================
+
+09-Oct-2026
+
+1. Text Field :: 
+
+insert data - fill(''); - Promise<void>
+capture data - inputValue(); - Promise<string>
+delete data - clear(); - Promise<void>
+
+
+locator :: action 
+
+===================
+
+12-Oct-2026
+
+Click Action ::
+
+click() :: no input, Promise<void>
+
+
+expect() :: Data validation :: Assertion :: 
+
+
+2 Types of Assertions ::
+
+1. Hard Assertion :: Fail - test execution terminated - Mark test case as failed.
+2. Soft Assertion :: Step marked as fail - test execution continues 
+                        - Finally test case is marked as failed.
+
+expect.soft()
+
+===================
+
+        14-Oct-2026
+
+Radio Buuton AND Check Boxes :: 
+
+check(); no input parameter; Promise<void>
+isChecked();  no input parameter; Promise<Boolean>
+
+
+Dropdown :: 
+
+select ::
+
+selectOptions(); string - 
+
+ul - unsorted List
+
+li - list items
+
+===============================================
+
+17-Oct-2026
+
+Web Tables :: 
+
+table, 
+
+thead = Table Header
+
+tr - Table Row
+
+th - Table Header Column
+
+
+tbody - Table body
+
+tr - 
+
+td - Table cell - table data
+
+===============================================
+
+26-Oct-2026
+
+Calender :: 
+
+Dialog :: Alerts :: 
+
+Simple  Alert :: Ok button and message
+Confirmation  Alert :: Ok, Cancel and message
+Prompt Alert :: Ok, Cancel, message, TextFiled.
+
+ page.on('dialog', async dialog => {
+        console.log(dialog.type());
+        expect(dialog.type()).toBe('prompt'); // alert, confirm, prompt
+        console.log(dialog.message());
+        console.log(dialog.defaultValue());
+
+        // await dialog.accept('Playwrignt');
+        await dialog.accept();
+        // await dialog.dismiss();
+        await expect(displayMessage).toBeVisible();
+        console.log(await displayMessage.innerText());
+    });
+
+
+===============================================
+
+27-Oct-2026
+
+ Multiple Browser Windows/tabs :: 
+
+Promise.all(
+        [
+            context.waitForEvent('page')
+        ]
+)
+
+browser - 
+context - new profile or new session
+page - page
+
+===============================================
+
+28-Oct-2026
+
+Frames / iframes :: 
+
+===============================================
+
+29-Oct-2026
+
+Mouse Actions :: 
+
+Left click - normal click - 
+Right Click - context click
+middle click - Wheel click
+hover - 
+draganddrop - 
+dbl click
+
+===============================================
+
+03-Nov-2026
+
+Screenshots & Visual Comparision
+
+screenshot({path: 'location/nameofss.jpg'});
+
+page.screnshot()
+
+fullPage, Current view
+
+element.screenshot();
+
+==============
+
+Keyboard Actions
+
+press()
+pressSequentially()
+
+
+===========
+
+File upload :: 
+
+setInputFiles('loc/filename.ext') 
+
+setInputFiles(['loc/filename.ext', 'loc/filename.ext']) 
+
+===============================================
+
+04-Nov-2026
+
+File Download ::
+
+Promise.all();
+
+Shadow DOM
+ Handling Shadow DOM, 
+css
+playwright core locators
+xpath - cannot be used
+
+ViewPort :: 
+
+
+SSL :: Secure Socket Layer :: 
+
+===============================================
+
+05-Nov-2026
+
+Proxy ::
+
+url
+uname
+pswd
+bypass
+
+Cookies :: 
+
+===============================================
+
+06-Nov-2026
+
+Record Video, Trace Viewer
+ Enabling Video and Tracing
+ Opening trace files for debugging
+ Retries and handle Flaky tests
+
+test fail - retries : 
+
+Tagging & Annotations
+
+ Annotations - only, skip, slow, fail, fixme and Tagging Tests
+
+
+only :: specific test case
+
+===============================================
+
+11-Nov-2026
+
+200
+Smoke - 100
+Sanity - 100
+Regression -100
+
+Tags :: 
+
+To run tagged test cases
+
+npx playwright test 22tagging.spec.ts --grep=@Regression
+
+AND - 
+npx playwright test 22tagging.spec.ts --grep="(?=.*@Regression)(?=.*@Sanity)"
+
+OR - |
+npx playwright test 22tagging.spec.ts --grep="@Regression|@Sanity" 
+
+To skip tagged test cases
+npx playwright test 22tagging.spec.ts --grep-invert=@Regression
+
+npx playwright test 22tagging.spec.ts --grep-invert="@Regression|@Sanity"
+
+
+Parallel Test Execution
+ Setting parallelism in config
+ Worker-level isolation
+ Limiting workers
+
+Record the tests (Test Generator/Codegen)
+ Record the tests using Codegen
+ Modifying generated tests
+ Debugging
+ Identify locators in Codegen
+
+===============================================
+
+13-Nov-2026
+
+Parameterization
+ Data Driven Testing with External files( JSON, CSV & Excel)
+
+fs - file system - fs.readFileSync(filePath, format)
+
+formats :: utf-8, utf-16,
+
+JSON :: 
+
+[
+
+{
+      "key1"  : value1,
+      "key2": value2
+},
+{
+      "key1"  : value1,
+      "key2": value2
+},
+{
+      "key1"  : value1,
+      "key2": value2
+}
+
+]
+
+
+CSV :: 
+
+1. prodName,country,countrycode,col4,col5
+2. Abc,India,+91,x,y
+3. Abc,India,+91,x,y
+4. Abc,India,+91,x,y
+
+csv-prase module should be installed.
+
+Excel :: 
+
+xlsx module should be installed.
+
+================================================================
+
+17 - Nov - 2026
+
+Reporting :: 
+ 
+ Default reports and Integrating Allure Reporter
+
+ reporter: [
+    ['html', {
+      open: 'never',
+      // outputFolder: `playwright-report-${new Date().toLocaleString()
+      // .replaceAll( /[/:,]/g, '-' )}`
+    }],
+    // [ 'dot' ]
+    // [ 'line' ]
+    // [ 'list' ]
+    // [ 'json', { outputFile: 'result.json' } ]
+    // [ 'junit', { outputFile: 'result.xml' } ]
+    // [ 'blob' ]
+    ['allure-playwright']
+ ]
+
+For Allure Report ::
+
+1. install allure-playwright :: npm install allure-playwright
+2, Add ['allure-playwright'] to reporter in config file.
+3. Run below commands to open allure reports ::
+npx allure generate ./allure-results
+npx allure open ./allure-report
+
+================================================================
+
+18 - Nov - 2026
+
+ 6afdaecdf1e24e33a3b961c0 
+
+
+
+
+
+
+
+

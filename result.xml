@@ -1,0 +1,46 @@
+<testsuites id="" name="" tests="4" failures="1" skipped="0" errors="0" time="7.95982">
+<testsuite name="example.spec.ts" timestamp="2026-11-17T14:19:48.821Z" hostname="chromium" tests="4" failures="1" skipped="0" time="6.71" errors="0">
+<testcase name="has title 001" classname="example.spec.ts" time="0.542">
+</testcase>
+<testcase name="get started link  002" classname="example.spec.ts" time="0.403">
+</testcase>
+<testcase name="has title  003" classname="example.spec.ts" time="0.402">
+</testcase>
+<testcase name="get started link  004" classname="example.spec.ts" time="5.363">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-get-started-link-004-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveTitle(expected) failed" type="expect.toHaveTitle">
+<![CDATA[  [chromium] › example.spec.ts:26:5 › get started link  004 ────────────────────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Pplaywright/
+    Received string:  "Fast and reliable end-to-end testing for modern web apps | Playwright"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        - locator resolved to <html lang="en" dir="ltr" data-theme="light" data-rh="lang,dir,class" data-has-hydrated="false" data-theme-choice="system" class="plugin-pages plugin-id-default">…</html>
+        12 × unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+           - locator resolved to <html lang="en" dir="ltr" data-theme="light" data-has-hydrated="true" data-theme-choice="system" class="plugin-pages plugin-id-default" data-rh="lang,dir,class,data-has-hydrated">…</html>
+        - unexpected value "Fast and reliable end-to-end testing for modern web apps | Playwright"
+
+
+      28 |
+      29 |   // Expect a title "to contain" a substring.
+    > 30 |   await expect(page).toHaveTitle(/Pplaywright/);
+         |                      ^
+      31 | });
+      32 |
+      33 |
+        at E:\PWLearning\Batch7PM\tests\example.spec.ts:30:22
+
+    Error Context: ..\test-results\example-get-started-link-004-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>
