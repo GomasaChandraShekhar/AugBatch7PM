@@ -989,8 +989,38 @@ npx allure open ./allure-report
  6afdaecdf1e24e33a3b961c0 
 
 
+================================================================
+
+23 - Nov - 2026
+
+API Testing :: 
+
+VISA, RUPAY, MasterCard :: 
+
+url/endpoint/baseUri :: 
+Headers ::
+payload/requestBody ::
+Response ::
 
 
+HTTP Request Methods :: 
+
+Post :: To create data in database
+Get :: To retrieve data from database
+Put :: To update data
+Patch :: Partially update data
+Delete :: to delete data from database
+
+HTTP Status Codes :: 
+
+200 - OK - Success status code - Get 
+201 - Created - Post
+204 - Not Found - Get
+
+
+================================
+
+24 Nov 2026
 
 
 

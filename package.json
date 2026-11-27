@@ -3,16 +3,23 @@
   "version": "1.0.0",
   "description": "Playwright Typescript",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "Regression": "npx playwright test 24purchasepom.spec.ts --grep=@Regression",
+    "Smoke": "npx playwright test 24purchasepom.spec.ts --grep=@Smoke",
+    "placeorder": "npx playwright test 24purchasepom.spec.ts --headed",
+    "allTests": "npx playwright test"
+  },
   "keywords": [],
   "author": "Gomasa",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
     "@playwright/test": "^1.63.0",
     "@types/node": "^26.6.3",
     "allure-playwright": "^3.15.0",
     "csv-parse": "^7.0.3",
+    "random-js": "^2.1.0",
     "xlsx": "^0.18.5"
   }
 }
